@@ -1,0 +1,19 @@
+.header {
+  padding: 16px 0 20px 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.header__btn {
+  border: none;
+  background-color: var(--bg-color);
+}
+.nav-list {
+  display: none;
+  @media screen and (min-width: $desctop) {
+    display: flex;
+  }
+  &__item:not(:first-child) {
+  }
+}
