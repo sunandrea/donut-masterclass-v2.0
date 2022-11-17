@@ -4,11 +4,17 @@
     display: flex;
     justify-content: space-between;
   }
+  &__wrapper {
+  }
 }
 .header__btn {
   border: none;
   background-color: var(--bg-color);
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
 }
+
 .nav-list {
   display: none;
   @media screen and (min-width: $desctop) {
