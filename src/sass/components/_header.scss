@@ -4,8 +4,6 @@
     display: flex;
     justify-content: space-between;
   }
-  &__wrapper {
-  }
 }
 .header__btn {
   border: none;
@@ -19,7 +17,5 @@
   display: none;
   @media screen and (min-width: $desctop) {
     display: flex;
-  }
-  &__item:not(:first-child) {
   }
 }
