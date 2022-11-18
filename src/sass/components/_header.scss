@@ -101,14 +101,17 @@
 }
 
 .hero {
-  min-height: calc(100vh - 66px);
+  height: 246px;
   background-position: center calc(-1 * 66px);
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    min-height: calc(100vh - 68px);
+    height: 277px;
     background-position: center calc(-1 * 68px);
   }
   @media screen and (min-width: $desctop) {
-    min-height: calc(100vh - 106px);
+    height: 450px;
     background-position: center calc(-1 * 106px);
   }
 }
+// min-height: calc(100vh - 66px);
+// min-height: calc(100vh - 68px);
+// min-height: calc(100vh - 106px);
