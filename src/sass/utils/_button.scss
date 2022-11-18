@@ -16,6 +16,7 @@
 
   &:hover &text,
   &:focus &text {
+
     color: rgba(243, 132, 140, 1);
   }
 
@@ -26,7 +27,7 @@
     filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
   }
 
-  &:active &text {
+  &:active &__text {
     color: #fff;
   }
 
