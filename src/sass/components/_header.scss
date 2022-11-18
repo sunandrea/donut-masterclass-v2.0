@@ -1,14 +1,18 @@
 .header {
-  padding: 16px 0 20px 0;
+  padding-top: 16px;
   @media screen and (min-width: $desctop) {
-    padding: 36px 0 0 16px;
+    padding-top: 36px;
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    padding: 24px 32px 0 32px;
+    padding-top: 24px;
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+      align-items: center;
+    }
     @media screen and (min-width: $desctop) {
       justify-content: flex-start;
       align-items: center;
@@ -17,9 +21,10 @@
 }
 .header__btn {
   border: none;
-  background-color: var(--bg-color);
+  background-color: inherit;
   @media screen and (min-width: $desctop) {
     display: none;
+    margin-left: 20px;
   }
 }
 
@@ -53,8 +58,57 @@
     }
   }
 }
-// .nav-list__item {
-//   &:not(:first-child) {
-//     margin-left: 20px;
-//   }
-// }
+.header,
+.hero {
+  background-image: url(../images/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero-mob@2x.jpg);
+  }
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    background-image: url(../images/bg-hero-tab.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-hero-tab@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $desctop) {
+    background-image: url(../images/bg-hero-desc.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bg-hero-desc@2x.jpg);
+    }
+  }
+  // background-position: center;
+  // background-attachment: fixed;
+}
+
+.header {
+  height: 66px;
+  background-position: center 0;
+  // filter: grayscale(100%);
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    height: 68px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 106px;
+  }
+}
+
+.hero {
+  min-height: calc(100vh - 66px);
+  background-position: center calc(-1 * 66px);
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    min-height: calc(100vh - 68px);
+    background-position: center calc(-1 * 68px);
+  }
+  @media screen and (min-width: $desctop) {
+    min-height: calc(100vh - 106px);
+    background-position: center calc(-1 * 106px);
+  }
+}
