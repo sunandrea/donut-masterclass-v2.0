@@ -1,0 +1,105 @@
+.footer {
+  padding-top: 28px;
+  padding-bottom: 50px;
+
+  background-color: #f6f7f7;
+  background-image: url(../images/footer/decor-footer.png),
+    url(../images/footer/donuts-footer.png);
+  background-repeat: no-repeat;
+  background-position: top right, 50% 85%;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 31px;
+    padding-bottom: 80px;
+
+    background-image: url(../images/footer/decor-footer-tabl1.png),
+      url(../images/footer/footer-tabl1.png);
+    background-repeat: no-repeat;
+    background-position: bottom 147px right 270px, top 0 left 80px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 37px;
+    padding-bottom: 101px;
+
+    background-image: url(../images/footer/decor-footer-desk1.png),
+      url(../images/footer/decor-footer-desk2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 112px left 158px, bottom 180px right 57px;
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 100px;
+  }
+
+  &__icons {
+    width: 16px;
+    height: 16px;
+    fill: #2e2520;
+  }
+
+  &__link {
+    &:hover,
+    &:focus {
+      .footer-social__icons {
+        fill: var(--pink-color);
+      }
+    }
+  }
+}
+
+.footer-contact {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #2e2520;
+
+    & {
+      &:hover,
+      &:focus {
+        color: var(--pink-color);
+
+        .footer-contact__icons {
+          fill: currentColor;
+        }
+      }
+    }
+  }
+
+  &__icons {
+    margin-right: 4px;
+    width: 13px;
+    height: 13px;
+    fill: #000000;
+
+    &-- {
+      width: 11px;
+      height: 14px;
+    }
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
