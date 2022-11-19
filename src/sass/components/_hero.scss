@@ -80,6 +80,8 @@
   border-radius: 25px;
   filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
   color: #ffffff;
+
+  transition: color, background, border, filter var(--anim);
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     margin-top: 24px;
   }
@@ -103,6 +105,8 @@
   display: flex;
   justify-content: center;
   margin-top: 28px;
+  
+  transition: fill var(--anim);
 
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     justify-content: flex-start;

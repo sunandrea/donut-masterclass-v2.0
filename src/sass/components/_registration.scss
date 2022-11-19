@@ -232,6 +232,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    transition: background-color, border, filter, color var(--anim) ;
 
     &:hover,
     &:focus {

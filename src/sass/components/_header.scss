@@ -45,6 +45,9 @@
     padding: 4px 8px;
 
     color: var(--main-color);
+
+    transition: background, color var(--anim);
+
     &:hover,
     &:focus {
       background: linear-gradient(
@@ -174,6 +177,7 @@
     line-height: 1.21;
     padding: 10px 28px;
     color: var(--main-color);
+    transition: background, box-shadow, color var(--anim);
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
       font-size: 40px;
       line-height: 1.22;

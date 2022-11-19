@@ -284,7 +284,7 @@
 
 .background {
   &__laptop {
-    @media screen and (max-width: $pre-tablet) and (min-width: $desctop){
+    @media screen and (max-width: $pre-tablet) and (min-width: $desctop) {
       display: none;
     }
     position: absolute;
@@ -293,18 +293,18 @@
     top: 0;
     left: 0;
 
-     @media screen and (min-width: $tablet) and (max-width: $pre-desctop){
-    background: url(../images/price/bubliki/tab.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: url(../images/price/bubliki/tab@2.png);
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+      background: url(../images/price/bubliki/tab.png);
       background-repeat: no-repeat;
       background-size: 100%;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/bubliki/tab@2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
     }
-  }
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     background: url(../images/price/bubliki/tab.png);

@@ -50,6 +50,8 @@
     width: 16px;
     height: 16px;
     fill: #2e2520;
+
+    transition: fill var(--anim);
   }
 
   &__link {
@@ -74,6 +76,8 @@
 
   &__link {
     color: #2e2520;
+
+    transition: color var(--anim);
 
     & {
       &:hover,
