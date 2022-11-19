@@ -3,18 +3,18 @@
   margin-right: auto;
   margin-bottom: 100px;
 
-  @media screen and (max-width: $pre-tablet) {
-    background: url(../images/price/bubliki/mob.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: url(../images/price/bubliki/mob@2.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-  }
+  // @media screen and (max-width: $pre-tablet) {
+  //   background: url(../images/price/bubliki/mob.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background: url(../images/price/bubliki/mob@2.png);
+  //     background-repeat: no-repeat;
+  //     background-size: 100%;
+  //   }
+  // }
 
   &__conteiner {
     @media screen and (min-width: $tablet) {
@@ -252,28 +252,28 @@
     }
   }
 
-  &__background {
-    display: none;
-    position: absolute;
-    left: 365px;
-    top: -40px;
-    width: 49%;
-    height: 741px;
-    z-index: -1;
-    @media screen and (min-width: $desctop) {
-      display: block;
-      background: url(../images/price/bubliki/desk.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background: url(../images/price/bubliki/desk@2.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-      }
-    }
-  }
+  // &__background {
+  //   display: none;
+  //   position: absolute;
+  //   left: 365px;
+  //   top: -40px;
+  //   width: 49%;
+  //   height: 741px;
+  //   z-index: -1;
+  //   @media screen and (min-width: $desctop) {
+  //     display: block;
+  //     background: url(../images/price/bubliki/desk.png);
+  //     background-repeat: no-repeat;
+  //     background-size: 100%;
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background: url(../images/price/bubliki/desk@2.png);
+  //       background-repeat: no-repeat;
+  //       background-size: 100%;
+  //     }
+  //   }
+  // }
 }
 
 .space {
