@@ -6,17 +6,21 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
 }
+
 h2 {
   text-align: center;
   font-family: var(--main-font-family);
@@ -26,6 +30,7 @@ h2 {
   vertical-align: top;
   color: var(--main-color);
 }
+
 p {
   font-family: var(--main-font-family);
   font-weight: 400;
@@ -35,23 +40,32 @@ p {
   vertical-align: top;
   color: var(--main-color);
 }
+
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
   font-family: var(--main-font-family);
 }
+
 .container {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
+  max-width: 1280px;
+  @media screen and (min-width: $mobail) {
+    width: $mobail;
+  }
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     padding-right: 32px;
     padding-left: 32px;
+    width: $tablet;
   }
+
   @media screen and (min-width: $desctop) {
     padding-right: 16px;
     padding-left: 16px;
+    width: $desctop;
   }
 }
