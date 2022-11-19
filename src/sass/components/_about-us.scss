@@ -1,5 +1,5 @@
 .about {
-  padding-top: 20px;
+  padding-top: 28px;
 }
 
 .about-card {
@@ -8,8 +8,12 @@
   }
 }
 
+.about__wrapper {
+  line-height: 18px;
+}
+
 .about__image {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   mix-blend-mode: darken;
   border-radius: 24px;
   mix-blend-mode: darken;
@@ -44,51 +48,47 @@
   text-align: left;
   font-size: 16px;
   line-height: 1.25;
-  margin-bottom: 1.2em;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $desctop) {
     font-size: 18px;
     line-height: 1.2;
+    margin-bottom: 22px;
   }
 }
 
-.about__subtitle:last-child {
-  margin-bottom: 0;
-}
+.read-more__target {
+  text-align: left;
 
-.about__read-more {
-  display: block;
-  opacity: 0;
-  height: 0;
-  transition: all 250ms;
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 0em;
   text-align: left;
   font-size: 16px;
   line-height: 1.25;
+  display: none;
 
   @media screen and (min-width: $desctop) {
-    opacity: 1;
     font-size: 18px;
     line-height: 1.2;
+    display: block;
   }
 }
 
-.about__read-more--open {
-  display: block;
-  opacity: 1;
-  height: 6rem;
+.read-more__trigger--opened {
+  display: none;
 }
 
-.read-more-btn {
-  position: relative;
-  display: inline-block;
-  padding: -3rem 0rem;
-
-  cursor: pointer;
-  text-align: left;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-
+.read-more__check {
+  &:checked ~ .read-more__wrap .read-more__target,
+  &:checked ~ .read-more__trigger--opened {
+    display: block;
+  }
+  &:checked ~ .read-more__trigger--closed {
+    display: none;
+  }
+}
+.read-more__trigger--closed {
   @media screen and (min-width: $desctop) {
     display: none;
   }
