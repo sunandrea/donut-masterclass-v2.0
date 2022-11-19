@@ -3,17 +3,22 @@
   margin-right: auto;
   margin-bottom: 100px;
 
+  @media screen and (max-width: $pre-tablet) {
+    background: url(../images/price/bubliki/mob.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../images/price/bubliki/mob@2.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
   &__conteiner {
-    margin-left: 20px;
-    margin-right: 20px;
     @media screen and (min-width: $tablet) {
       display: flex;
-      margin-left: 32px;
-      margin-right: 32px;
-    }
-    @media screen and (min-width: $desctop) {
-      margin-left: 16px;
-      margin-right: 16px;
     }
   }
 
@@ -21,14 +26,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 8px;
-    padding-right: 19px;
+    padding-right: 8px;
     @media screen and (min-width: $tablet) {
-      padding-right: 12px;
       height: 580px;
       flex-basis: calc(100% - (5 * 14px) / 3);
     }
     @media screen and (min-width: $desctop) {
-      padding-right: 12px;
       height: 610px;
       flex-basis: calc(100% - (5 * 32px) / 3);
     }
@@ -78,10 +81,16 @@
       background-repeat: no-repeat;
       background-position: right 50% bottom 100px;
       background-color: #fafbfb;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/background@2.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 100px;
+        background-color: #fafbfb;
+      }
 
       @media screen and (min-width: $tablet) {
-        background: url(../images/price/background.png);
-        background-repeat: no-repeat;
         background-position: right 50% bottom 96px;
         background-color: #fafbfb;
       }
@@ -91,6 +100,14 @@
         background-repeat: no-repeat;
         background-position: right 50% bottom 96px;
         background-color: #fafbfb;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/price/background_desk@2.png);
+          background-repeat: no-repeat;
+          background-position: right 50% bottom 96px;
+          background-color: #fafbfb;
+        }
       }
     }
 
@@ -99,12 +116,28 @@
       background-repeat: no-repeat;
       background-position: right 50% bottom 96px;
       background-color: #fafbfb;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/background@2.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 96px;
+        background-color: #fafbfb;
+      }
     }
     @media screen and (min-width: $desctop) {
       background: url(../images/price/background_desk.png);
       background-repeat: no-repeat;
       background-position: right 50% bottom 96px;
       background-color: #fafbfb;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/background_desk@2.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 96px;
+        background-color: #fafbfb;
+      }
     }
   }
 
@@ -119,6 +152,10 @@
     margin-bottom: 27px;
 
     color: #2e2520;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 31px;
+    }
   }
 
   &__list {
@@ -154,6 +191,12 @@
   &__item {
     flex-basis: calc((100% - 3 * 12px) / 4);
     position: relative;
+    padding-right: 11px;
+
+    @media screen and (min-width: $tablet) {
+      padding-right: 0;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -162,10 +205,6 @@
       background-image: url('../images/price/marker.svg');
       background-size: contain;
       background-repeat: no-repeat;
-      margin-right: 10px;
-      @media screen and (min-width: $desctop) {
-        margin-right: 13px;
-      }
     }
   }
   &__item:not(:last-child) {
@@ -175,13 +214,11 @@
   }
 
   &__text {
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.22;
     text-align: left;
-    margin-left: 40px;
+    margin-left: 34px;
 
     color: #2e2520;
 
@@ -213,5 +250,85 @@
     &:focus .button__text {
       color: rgba(243, 132, 140, 1);
     }
+  }
+
+  &__background {
+    display: none;
+    position: absolute;
+    left: 365px;
+    top: -40px;
+    width: 49%;
+    height: 741px;
+    z-index: -1;
+    @media screen and (min-width: $desctop) {
+      display: block;
+      background: url(../images/price/bubliki/desk.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/bubliki/desk@2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.space {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.background {
+  &__laptop {
+    @media screen and (max-width: $pre-tablet) and (min-width: $desctop){
+      display: none;
+    }
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    top: 0;
+    left: 0;
+
+     @media screen and (min-width: $tablet) and (max-width: $pre-desctop){
+    background: url(../images/price/bubliki/tab.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../images/price/bubliki/tab@2.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+  }
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    background: url(../images/price/bubliki/tab.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background: url(../images/price/bubliki/tab@2.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &__laptop-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 364px;
+    bottom: 95px;
+    z-index: -1;
+
+    background: url(../images/price/bubliki/bublik_lap.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
