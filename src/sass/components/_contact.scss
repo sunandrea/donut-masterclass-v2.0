@@ -1,12 +1,15 @@
-.contact {
-    width: 280px;
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 24px;
 
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        width: 336px;
+        padding-top: 0px;
+        padding-bottom: 31px;
     }
 
     @media screen and (min-width: $desctop) {
-        width: 394px;
+        padding-top: 0px;
+        padding-bottom: 37px;
     }
 }
 
@@ -23,7 +26,7 @@
         font-size: 32px;
         font-weight: 500;
         line-height: 1.22;
-    }
+    }    
 }
 
 .contact_text {
@@ -33,13 +36,15 @@
 .contact__form {
     width: 100%;
     padding: 0px 10px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .contact__input {
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
     display: block;
     margin-bottom: 20px;
     border-top: 0;
@@ -57,23 +62,11 @@
 }
 
 .send__button {
-    width: 145px;
-    height: 40px;
-    border: 1px solid #000;
-    border-radius: 25px;
-    background-color: var(--pink-color);
+    @extend .register-link;
     margin-bottom: 28px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-
-    &:hover,
-    &:focus {
-        background-color: #fff;
-        border: 1px solid var(--pink-color);
-        filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
-        color: rgba(243, 132, 140, 1);
-        ;
+    border-color: transparent;
+    @media screen and (max-width: $pre-tablet) {
+        border-color: #000;
     }
 }
 
