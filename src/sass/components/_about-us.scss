@@ -1,5 +1,13 @@
 .about {
-  padding-top: 28px;
+  padding-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 36px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 64px;
+  }
 }
 
 .about-card {
@@ -21,6 +29,7 @@
 
   @media screen and (min-width: $tablet) {
     margin-right: 32px;
+    margin-bottom: 0;
   }
 }
 
