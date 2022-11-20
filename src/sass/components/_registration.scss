@@ -1,16 +1,14 @@
 .registration {
-    // width: 394px;
     margin-bottom: 42px;
+    padding-top: 40px;
     align-items: center;
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        // width: 704px;
-        // height: 312px;
-        // align-items: center;
+        padding-top: 0px;
+        padding-bottom: 68px;
     }
-
     @media screen and (min-width: $desctop) {
-        // width: 1034px;
-        // height: 313px;
+        padding-top: 0px;
+        padding-bottom: 126px;
     }
 }
 
@@ -42,21 +40,20 @@
    
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
         width: 704px;
-        // height: 100%;
         display: flex;
-        // box-shadow: ;
         background-image: url(../images/small-donuts.png), url(../images/small-cloud.png), url(../images/strawberry-donuts.png);
         background-repeat: no-repeat;
-        background-position: 25px 190px, left, right;
+        background-position: 25px 170px, left, right;
+        position: relative;
     }
     @media screen and (min-width: $desctop) {
         width: 1034px;
         height: 246px;
         display: flex;
-        
         background-image: url(../images/big-donuts.png), url(../images/big-cloud.png), url(../images/strawberry-donuts.png);
-            background-repeat: no-repeat;
-            background-position: 15px 97px, left, right;
+        background-repeat: no-repeat;
+        background-position: 15px 97px, left, right;
+        position: relative;
     }
 
 }
@@ -71,7 +68,19 @@
         flex-shrink: 0;
         border: none;
         margin-left: 62px;
+        margin-right: 0px;
         border-bottom: 0;
+       
+        &::after {
+                position: absolute;
+                width: 1px;
+                height: 154px;
+                color: rgba(0, 0, 0, 0.5);
+                content: " ";
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                top: 60px;
+                left: 184px;
+            }
     }
     @media screen and (min-width: $desctop) {
         width: 127px;
@@ -79,6 +88,16 @@
         margin-left: 213px;
         margin-top: auto;
         margin-bottom: auto;
+        &::after {
+                position: absolute;
+                width: 1px;
+                height: 184px;
+                color: rgba(0, 0, 0, 0.5);
+                content: " ";
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                top: 40px;
+                left: 368px;
+            }
     }
 }
 .date__text {
@@ -92,7 +111,7 @@
     padding-right: 0px;
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
         color: #000;
-        position: relative;
+        // position: relative;
         font-size: 18px;
         line-height: 1.11;
         text-align: right;
@@ -101,13 +120,7 @@
         padding-top: 0px;
         padding-bottom: 0px;
         margin-top: 85px;
-        &::after {
-            position: absolute;
-            width: 1px;
-            height: 154 px;
-            color: rgba(0, 0, 0, 0.5);
-            content: "";
-        }
+       
     }
     @media screen and (min-width: $desctop) {
         color: var(--main-color);
@@ -131,13 +144,14 @@
     margin-left: 8px;
     margin-bottom: 24px;
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        margin-left: 24px;
+        margin-left: 56px;
         margin-top: 40px;
         margin-bottom: 0px;
     }
     @media screen and (min-width: $desctop) {
         margin-top: 40px;
         margin-bottom: 0px;
+        margin-left: 56px;
     }
 }
 .registration__text {
@@ -203,6 +217,8 @@
     margin-top: 24px;
     @media screen and (min-width: $tablet) {
         display: flex; 
+        margin-top: 0px;
+        height: 246px;
     }
     @media screen and (min-width: $desctop) {
         margin-top: 0px;
@@ -210,8 +226,6 @@
 }
 .register {
     padding-bottom: 32px;
-    // justify-content: center;
-    // align-items: center;
     
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
         margin: 103px 40px 103px 74px;
