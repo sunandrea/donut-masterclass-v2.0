@@ -4,15 +4,54 @@
   font-style: normal;
   margin-bottom: 80px;
 
-  // @media screen and (max-width: $pre-tablet) {
-  //   background-image: url(../images/reviews/background/mob.png);
-  //   background-repeat: no-repeat;
-  //   background-size: 100%;
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background: url(../images/reviews/background/mob@2.png);
-  //   }
+  // &__container {
+  //   // @media screen and (max-width: $pre-tablet) {
+  //   //   background-image: url(../images/reviews/background/mob.png);
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: 100%;
+  //   //   @media (min-device-pixel-ratio: 2),
+  //   //     (min-resolution: 192dpi),
+  //   //     (min-resolution: 2dppx) {
+  //   //     background: url(../images/reviews/background/mob@2.png);
+  //   //     background-repeat: no-repeat;
+  //   //     background-size: 100%;
+  //   //   }
+  //   // }
+
+  //   //   width: 99%;
+  //   //   height: 650px;
+  //   //   top: 88px;
+  //   //   left: 35px;
+  //   //   z-index: -1;
+  //   //   background-repeat: no-repeat;
+  //   // @media screen and (min-width: $tablet) {
+  //   //   background-image: url(../images/reviews/background/tab.png);
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: 100%;
+  //   //   @media (min-device-pixel-ratio: 2),
+  //   //     (min-resolution: 192dpi),
+  //   //     (min-resolution: 2dppx) {
+  //   //     background: url(../images/reviews/background/tab@2.png);
+  //   //     background-repeat: no-repeat;
+  //   //     background-size: 100%;
+  //   //   }
+  //   // }
+
+  //   // @media screen and (min-width: $desctop) {
+  //   //   width: 99%;
+  //   //   top: 50px;
+  //   //   left: 11px;
+  //   //   background-image: url(../images/reviews/background/desc.png);
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: 100%;
+  //   //   @media (min-device-pixel-ratio: 2),
+  //   //     (min-resolution: 192dpi),
+  //   //     (min-resolution: 2dppx) {
+  //   //     background: url(../images/reviews/background/desc@2.png);
+  //   //     background-repeat: no-repeat;
+  //   //     background-size: 100%;
+  //   //   }
+  //   // }
   // }
   &__title {
     font-family: 'Montserrat Alternates';
@@ -102,37 +141,6 @@
       background-color: #f3848c;
     }
   }
-
-  // &__bachground {
-  //   position: absolute;
-  //   width: 99%;
-  //   height: 650px;
-  //   top: 88px;
-  //   left: 35px;
-  //   z-index: -1;
-  //   background-repeat: no-repeat;
-  //   @media screen and (min-width: $tablet) {
-  //     background-image: url(../images/reviews/background/tab.png);
-  //     @media (min-device-pixel-ratio: 2),
-  //       (min-resolution: 192dpi),
-  //       (min-resolution: 2dppx) {
-  //       background: url(../images/reviews/background/tab@2.png);
-  //     }
-  //   }
-
-  //   // @media screen and (min-width: $desctop) {
-  //   //   width: 99%;
-  //   //   height: 609px;
-  //   //   top: 50px;
-  //   //   left: 11px;
-  //   //   background-image: url(../images/reviews/background/desc.png);
-  //   //   @media (min-device-pixel-ratio: 2),
-  //   //     (min-resolution: 192dpi),
-  //   //     (min-resolution: 2dppx) {
-  //   //     background: url(../images/reviews/background/desc@2.png);
-  //   //   }
-  //   // }
-  // }
 
   // &__first {
   //   display: none;
