@@ -1,20 +1,64 @@
 .price {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  padding-top: 101px;
+  &__section {
+    margin-left: auto;
+    margin-right: auto;
 
-  // @media screen and (max-width: $pre-tablet) {
-  //   background: url(../images/price/bubliki/mob.png);
-  //   background-repeat: no-repeat;
-  //   background-size: 100%;
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background: url(../images/price/bubliki/mob@2.png);
+    // @media screen and (max-width: $pre-tablet) {
+    //   background: url(../images/price/bubliki/mob.png);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    //   @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background: url(../images/price/bubliki/mob@2.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //   }
+    // }
+
+    // @media screen and (max-width: $pre-tablet) and (min-width: $desctop) {
+    //   display: none;
+    // }
+    // position: absolute;
+    // width: 100%;
+    // height: 650px;
+    // top: 0;
+    // left: 0;
+
+    // @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    //   background: url(../images/price/bubliki/tab.png);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    //   @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background: url(../images/price/bubliki/tab@2.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //   }
+    // }
+  }
+
+  // @media screen and (min-width: $desctop) {
+  //     display: block;
+  //     background: url(../images/price/bubliki/desk.png);
   //     background-repeat: no-repeat;
-  //     background-size: 100%;
+  //     background-size: 79%;
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background: url(../images/price/bubliki/desk@2.png);
+  //       background-repeat: no-repeat;
+  //       background-size: 79%;
+  //     }
   //   }
-  // }
+
+  // left: 365px;
+  // top: -40px;
+  // width: 49%;
+  // height: 741px;
 
   &__conteiner {
     @media screen and (min-width: $tablet) {
@@ -240,6 +284,9 @@
     justify-content: center;
     align-items: center;
 
+    @extend .register-link;
+    margin-top: 0;
+
     &:hover,
     &:focus {
       background-color: #fff;
@@ -251,29 +298,6 @@
       color: rgba(243, 132, 140, 1);
     }
   }
-
-  // &__background {
-  //   display: none;
-  //   position: absolute;
-  //   left: 365px;
-  //   top: -40px;
-  //   width: 49%;
-  //   height: 741px;
-  //   z-index: -1;
-  //   @media screen and (min-width: $desctop) {
-  //     display: block;
-  //     background: url(../images/price/bubliki/desk.png);
-  //     background-repeat: no-repeat;
-  //     background-size: 100%;
-  //     @media (min-device-pixel-ratio: 2),
-  //       (min-resolution: 192dpi),
-  //       (min-resolution: 2dppx) {
-  //       background: url(../images/price/bubliki/desk@2.png);
-  //       background-repeat: no-repeat;
-  //       background-size: 100%;
-  //     }
-  //   }
-  // }
 }
 
 .space {
@@ -282,53 +306,15 @@
   }
 }
 
-.background {
-  &__laptop {
-    @media screen and (max-width: $pre-tablet) and (min-width: $desctop){
-      display: none;
-    }
-    position: absolute;
-    width: 100%;
-    height: 650px;
-    top: 0;
-    left: 0;
+  // &__laptop-circle {
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 100px;
+  //   left: 364px;
+  //   bottom: 95px;
+  //   z-index: -1;
 
-     @media screen and (min-width: $tablet) and (max-width: $pre-desctop){
-    background: url(../images/price/bubliki/tab.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: url(../images/price/bubliki/tab@2.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-  }
-  }
-  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-    background: url(../images/price/bubliki/tab.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background: url(../images/price/bubliki/tab@2.png);
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-  }
-
-  &__laptop-circle {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 364px;
-    bottom: 95px;
-    z-index: -1;
-
-    background: url(../images/price/bubliki/bublik_lap.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-}
+  //   background: url(../images/price/bubliki/bublik_lap.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  // }
