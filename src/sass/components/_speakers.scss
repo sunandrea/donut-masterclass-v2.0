@@ -1,21 +1,22 @@
 .speakers {
   padding-top: 35px;
   background-color: #f6f7f7;
-  background-image: url(../images/speakers/Decor_speakers.png);
-  background-repeat: no-repeat;
-  background-position: right top;
+  // background-image: url(../images/speakers/Decor_speakers.png);
+  // background-repeat: no-repeat;
+  // background-position: right top;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 44px;
-    background-image: url(../images/speakers/Decor-speakers2.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    // background-image: url(../images/speakers/Decor-speakers2.png);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: contain;
   }
 
   @media screen and (min-width: $desctop) {
     padding-top: 100px;
-    background-image: url(../images/speakers/Decor-speakers3.png);
+    // background-image: url(../images/speakers/Decor-speakers3.png);
   }
 
   &__title {
