@@ -1,0 +1,320 @@
+.price {
+  padding-bottom: 100px;
+  padding-top: 101px;
+  &__section {
+    margin-left: auto;
+    margin-right: auto;
+
+    // @media screen and (max-width: $pre-tablet) {
+    //   background: url(../images/price/bubliki/mob.png);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    //   @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background: url(../images/price/bubliki/mob@2.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //   }
+    // }
+
+    // @media screen and (max-width: $pre-tablet) and (min-width: $desctop) {
+    //   display: none;
+    // }
+    // position: absolute;
+    // width: 100%;
+    // height: 650px;
+    // top: 0;
+    // left: 0;
+
+    // @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    //   background: url(../images/price/bubliki/tab.png);
+    //   background-repeat: no-repeat;
+    //   background-size: 100%;
+    //   @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background: url(../images/price/bubliki/tab@2.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //   }
+    // }
+  }
+
+  // @media screen and (min-width: $desctop) {
+  //     display: block;
+  //     background: url(../images/price/bubliki/desk.png);
+  //     background-repeat: no-repeat;
+  //     background-size: 79%;
+  //     @media (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background: url(../images/price/bubliki/desk@2.png);
+  //       background-repeat: no-repeat;
+  //       background-size: 79%;
+  //     }
+  //   }
+
+  // left: 365px;
+  // top: -40px;
+  // width: 49%;
+  // height: 741px;
+
+  &__conteiner {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+
+  &__box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    @media screen and (min-width: $tablet) {
+      height: 580px;
+      flex-basis: calc(100% - (5 * 14px) / 3);
+    }
+    @media screen and (min-width: $desctop) {
+      height: 610px;
+      flex-basis: calc(100% - (5 * 32px) / 3);
+    }
+
+    @media screen and (max-width: pre-tablet) {
+      background-position: right 50% bottom 5px;
+    }
+
+    box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+    border-radius: 25px;
+    background-color: #fafbfb;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &:not(:last-child) {
+      @media screen and (min-width: $tablet) {
+        margin-right: 15px;
+      }
+    }
+    &:not(:last-child) {
+      @media screen and (min-width: $desctop) {
+        margin-right: 32px;
+      }
+    }
+    &:first-child {
+      @media screen and (max-width: $pre-tablet) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (max-width: $pre-tablet) {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 24px;
+      }
+      border: 1px solid #f3848c;
+    }
+
+    &:not(:first-child) {
+      background: url(../images/price/background.png);
+      background-repeat: no-repeat;
+      background-position: right 50% bottom 100px;
+      background-color: #fafbfb;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/background@2.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 100px;
+        background-color: #fafbfb;
+      }
+
+      @media screen and (min-width: $tablet) {
+        background-position: right 50% bottom 96px;
+        background-color: #fafbfb;
+      }
+
+      @media screen and (min-width: $desctop) {
+        background: url(../images/price/background_desk.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 96px;
+        background-color: #fafbfb;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/price/background_desk@2.png);
+          background-repeat: no-repeat;
+          background-position: right 50% bottom 96px;
+          background-color: #fafbfb;
+        }
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      background: url(../images/price/background.png);
+      background-repeat: no-repeat;
+      background-position: right 50% bottom 96px;
+      background-color: #fafbfb;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/background@2.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 96px;
+        background-color: #fafbfb;
+      }
+    }
+    @media screen and (min-width: $desctop) {
+      background: url(../images/price/background_desk.png);
+      background-repeat: no-repeat;
+      background-position: right 50% bottom 96px;
+      background-color: #fafbfb;
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background: url(../images/price/background_desk@2.png);
+        background-repeat: no-repeat;
+        background-position: right 50% bottom 96px;
+        background-color: #fafbfb;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-bottom: 27px;
+
+    color: #2e2520;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desctop) {
+      gap: 16px;
+    }
+  }
+  &__list-title {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    color: #2e2520;
+
+    @media screen and (min-width: $desctop) {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc((100% - 3 * 12px) / 4);
+    position: relative;
+    padding-right: 11px;
+
+    @media screen and (min-width: $tablet) {
+      padding-right: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      background-image: url('../images/price/marker.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__item:not(:last-child) {
+    @media screen and (max-width: $pre-desctop) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__text {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: left;
+    margin-left: 34px;
+
+    color: #2e2520;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media screen and (min-width: $desctop) {
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+
+  &__link {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
+    @extend .register-link;
+    margin-top: 0;
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      border: 1px solid #f3848c;
+      filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+    }
+    &:hover .button__text,
+    &:focus .button__text {
+      color: rgba(243, 132, 140, 1);
+    }
+  }
+}
+
+.space {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+  // &__laptop-circle {
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 100px;
+  //   left: 364px;
+  //   bottom: 95px;
+  //   z-index: -1;
+
+  //   background: url(../images/price/bubliki/bublik_lap.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  // }

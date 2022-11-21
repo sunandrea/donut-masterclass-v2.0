@@ -1,0 +1,278 @@
+.program {
+  padding-top: 28px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 81px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 100px;
+  }
+}
+
+.program-card {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.flex-wrapper {
+  @media screen and (min-width: $tablet) {
+    margin-right: 40px;
+    max-width: 331px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-top: 61px;
+    margin-right: 119px;
+    max-width: 375px;
+  }
+}
+
+.program__title {
+  margin-bottom: 8px;
+
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 28px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 24px;
+  }
+}
+
+.program__subtitle {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 21px;
+  }
+}
+
+.program__list {
+  margin-bottom: 16px;
+
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 18px;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+}
+
+.program__item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/price/marker.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 18px;
+  }
+}
+
+.program-images__picture {
+  border-radius: 50%;
+}
+
+.program__text {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+  margin-left: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 34px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.read-more__target {
+  text-align: left;
+
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.25;
+  display: none;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 18px;
+    line-height: 1.2;
+    display: block;
+  }
+}
+
+.read-more__trigger--opened {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.read-more__check {
+  &:checked ~ .read-more__wrap .read-more__target,
+  &:checked ~ .read-more__trigger--opened {
+    display: block;
+  }
+  &:checked ~ .read-more__trigger--closed {
+    display: none;
+  }
+}
+.read-more__trigger--closed {
+  font-size: 16px;
+  line-height: 1.25;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}
+
+.program-images__list {
+  display: flex;
+}
+
+.program-images__wrapper--left {
+  margin-top: 24px;
+  width: 100%;
+  margin-right: 20px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 19px;
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-right: 138px;
+  }
+}
+
+.program-images__wrapper--right {
+  margin-top: 44px;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    margin-top: 44px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-top: 60px;
+  }
+}
+
+.program-images__item {
+  position: relative;
+
+  &:nth-child(odd) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: $tablet) {
+    &:nth-child(odd) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.program-images__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  white-space: nowrap;
+
+  color: #fff;
+
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.program-images__subtitle {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);
+
+  white-space: nowrap;
+  color: #fff;
+
+  font-size: 12px;
+  line-height: 1.25;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

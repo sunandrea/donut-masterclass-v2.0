@@ -1,0 +1,239 @@
+.reviews {
+  position: relative;
+  font-family: 'Montserrat';
+  font-style: normal;
+  margin-bottom: 80px;
+
+  // &__container {
+  //   // @media screen and (max-width: $pre-tablet) {
+  //   //   background-image: url(../images/reviews/background/mob.png);
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: 100%;
+  //   //   @media (min-device-pixel-ratio: 2),
+  //   //     (min-resolution: 192dpi),
+  //   //     (min-resolution: 2dppx) {
+  //   //     background: url(../images/reviews/background/mob@2.png);
+  //   //     background-repeat: no-repeat;
+  //   //     background-size: 100%;
+  //   //   }
+  //   // }
+
+  //   //   width: 99%;
+  //   //   height: 650px;
+  //   //   top: 88px;
+  //   //   left: 35px;
+  //   //   z-index: -1;
+  //   //   background-repeat: no-repeat;
+  //   // @media screen and (min-width: $tablet) {
+  //   //   background-image: url(../images/reviews/background/tab.png);
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: 100%;
+  //   //   @media (min-device-pixel-ratio: 2),
+  //   //     (min-resolution: 192dpi),
+  //   //     (min-resolution: 2dppx) {
+  //   //     background: url(../images/reviews/background/tab@2.png);
+  //   //     background-repeat: no-repeat;
+  //   //     background-size: 100%;
+  //   //   }
+  //   // }
+
+  //   // @media screen and (min-width: $desctop) {
+  //   //   width: 99%;
+  //   //   top: 50px;
+  //   //   left: 11px;
+  //   //   background-image: url(../images/reviews/background/desc.png);
+  //   //   background-repeat: no-repeat;
+  //   //   background-size: 100%;
+  //   //   @media (min-device-pixel-ratio: 2),
+  //   //     (min-resolution: 192dpi),
+  //   //     (min-resolution: 2dppx) {
+  //   //     background: url(../images/reviews/background/desc@2.png);
+  //   //     background-repeat: no-repeat;
+  //   //     background-size: 100%;
+  //   //   }
+  //   // }
+  // }
+  &__title {
+    font-family: 'Montserrat Alternates';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-bottom: 27px;
+
+    color: #2e2520;
+    @media screen and (min-width: $tablet) {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 1.22;
+
+      color: #000000;
+    }
+    @media screen and (min-width: $desctop) {
+      color: #2e2520;
+    }
+  }
+
+  &__text {
+    margin-bottom: 32px;
+
+    color: #2e2520;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 22px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__coment {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    @media screen and (min-width: $desctop) {
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+  &__coment:first-child {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+  &__coment:nth-child(2) {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+  &__coment:nth-child(3) {
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__page-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #000000;
+
+    &::before {
+      content: '';
+      width: 35px;
+      height: 2px;
+      margin-right: 12px;
+
+      background-color: #f3848c;
+    }
+    &::after {
+      content: '';
+      width: 35px;
+      height: 2px;
+      margin-left: 11px;
+
+      background-color: #f3848c;
+    }
+  }
+
+  // &__first {
+  //   display: none;
+  //   @media screen and (min-width: $desctop) {
+  //     display: block;
+  //   }
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(../images/reviews/background/first.png);
+  //   background-repeat: no-repeat;
+  //   background-position-x: 7%;
+  //   background-position-y: 92%;
+  // }
+
+  // &__second {
+  //   display: none;
+  //   @media screen and (min-width: $desctop) {
+  //     display: block;
+  //   }
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url(../images/reviews/background/second.png);
+  //   background-repeat: no-repeat;
+  //   background-position-x: 78%;
+  //   background-position-y: 98%;
+  // }
+}
+
+.employees {
+  margin-bottom: 8px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+    height: 468px;
+    align-items: flex-end;
+  }
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+    height: 614px;
+    align-items: flex-end;
+  }
+
+  &__box:nth-child(2) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 32px;
+    }
+  }
+  &__box:first-child {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      margin-right: 32px;
+      position: relative;
+      bottom: 264px;
+    }
+  }
+  &__box:last-child {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+      position: relative;
+      bottom: 263px;
+    }
+  }
+
+  &__pic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: #000000;
+  }
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  &__item:not(:last-child) {
+    margin-right: 4px;
+  }
+}

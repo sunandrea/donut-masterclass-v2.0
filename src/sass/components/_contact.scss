@@ -1,0 +1,96 @@
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+        padding-top: 0px;
+        padding-bottom: 31px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-top: 0px;
+        padding-bottom: 37px;
+    }
+}
+
+.title__contact {
+    margin-bottom: 27px;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+        font-size: 32px;
+        line-height: 1.22;
+        color: #000;
+        font-weight: 500;
+    }
+    
+    @media screen and (min-width: $desctop) {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.22;
+    }    
+}
+
+.contact_text {
+    margin-bottom: 16px;
+}
+
+.contact__form {
+    width: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__input {
+    max-width: 280px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--border-color-black);
+    background-color: var(--bg-color);
+    align-items: center;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send__button {
+    @extend .register-link;
+    margin-bottom: 28px;
+    border-color: transparent;
+    @media screen and (max-width: $pre-tablet) {
+        border-color: #000;
+    }
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedia__item {
+    color: var(--main-color);
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+
+}
+
+.socialmedia__icon {
+    color: var(--main-color);
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: var(--pink-color);
+    }
+}

@@ -1,0 +1,104 @@
+.about {
+  padding-top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 36px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 64px;
+  }
+}
+
+.about-card {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about__wrapper {
+  line-height: 18px;
+}
+
+.about__image {
+  margin-bottom: 28px;
+  mix-blend-mode: darken;
+  border-radius: 24px;
+  mix-blend-mode: darken;
+  width: 100%;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.about__contents {
+  width: 100%;
+}
+
+.about__title {
+  margin-bottom: 8px;
+
+  font-family: 'Montserrat Alternates';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+}
+
+.about__subtitle {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+  }
+}
+
+.read-more__target {
+  text-align: left;
+
+  font-family: Montserrat;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.25;
+  display: none;
+
+  @media screen and (min-width: $desctop) {
+    font-size: 18px;
+    line-height: 1.2;
+    display: block;
+  }
+}
+
+.read-more__trigger--opened {
+  display: none;
+}
+
+.read-more__check {
+  &:checked ~ .read-more__wrap .read-more__target,
+  &:checked ~ .read-more__trigger--opened {
+    display: block;
+  }
+  &:checked ~ .read-more__trigger--closed {
+    display: none;
+  }
+}
+.read-more__trigger--closed {
+  @media screen and (min-width: $desctop) {
+    display: none;
+  }
+}

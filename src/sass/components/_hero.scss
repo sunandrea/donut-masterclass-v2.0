@@ -1,0 +1,123 @@
+.hero {
+  padding: 20px 0 8px 0;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    padding-top: 28px;
+    padding-bottom: 43px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 65px;
+    padding-bottom: 90px;
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: center;
+    letter-spacing: -0.03em;
+    width: 280px;
+
+    color: var(--main-text-color);
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+      font-size: 30px;
+      line-height: 1.23;
+      width: 319px;
+      text-align: left;
+    }
+    @media screen and (min-width: $desctop) {
+      font-size: 60px;
+      line-height: 1.08;
+      width: 757px;
+      text-align: left;
+    }
+  }
+  &__text {
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    margin-top: 18px;
+    color: var(--main-text-color);
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+      align-items: flex-start;
+    }
+    @media screen and (min-width: $desctop) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.register-link {
+  width: 145px;
+  height: 40px;
+  margin-top: 28px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  padding: 9px 35px;
+  text-align: center;
+  background: var(--pink-color);
+  border-radius: 25px;
+  filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+  color: #ffffff;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    margin-top: 24px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--pink-color);
+    background: #ffffff;
+    border: 1px solid var(--pink-color);
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+  }
+  &:active {
+    color: #ffffff;
+    background-color: var(--pink-color);
+    border: 1px solid #ffffff;
+    box-shadow: inset 0px 4px 4px rgba(107, 66, 66, 0.25);
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    justify-content: flex-start;
+    margin-top: 32px;
+  }
+  &__item:not(:first-child) {
+    margin-left: 16px;
+  }
+  &__icon:hover,
+  &__icon:focus,
+  &__icon:active {
+    fill: #f3848c;
+  }
+}
