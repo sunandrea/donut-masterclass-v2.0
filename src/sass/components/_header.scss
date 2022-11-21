@@ -134,9 +134,9 @@
   z-index: 1;
   @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
     padding: 24px 32px;
-    background-image: url(../images/decor-burger-1.png);
-    background-repeat: no-repeat;
-    background-position: 45%, 4%, 23%, 3%;
+    // background-image: url(../images/decor-burger-1.png);
+    // background-repeat: no-repeat;
+    // background-position: 45%, 4%, 23%, 3%;
   }
   &.is-open {
     transform: translateX(0);
