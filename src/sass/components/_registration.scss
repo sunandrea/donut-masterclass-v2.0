@@ -1,134 +1,137 @@
 .registration {
-    margin-bottom: 42px;
-    padding-top: 40px;
-    align-items: center;
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        padding-top: 0px;
-        padding-bottom: 68px;
-    }
-    @media screen and (min-width: $desctop) {
-        padding-top: 0px;
-        padding-bottom: 126px;
-    }
+  padding-top: 40px;
+  align-items: center;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    padding-top: 0px;
+    padding-bottom: 68px;
+  }
+  @media screen and (min-width: $desctop) {
+    padding-top: 0px;
+    padding-bottom: 126px;
+  }
 }
 
 .title__registration {
-    margin-bottom: 27px;
-    align-items: center;
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        font-size: 32px;
-        line-height: 1.22;
-        color: #000;
-        font-weight: 500;
-    }
-    @media screen and (min-width: $desctop) {
-        color: var(--main-color);
-        font-size: 32px;
-        font-weight: 500;
-        line-height: 1.22;
-    }
+  margin-bottom: 27px;
+  align-items: center;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    font-size: 32px;
+    line-height: 1.22;
+    color: #000;
+    font-weight: 500;
+  }
+  @media screen and (min-width: $desctop) {
+    color: var(--main-color);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.22;
+  }
 }
 
 .registration__form {
-    width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-    @media screen and (max-width: $pre-tablet) {
-        background-image: linear-gradient(rgba(162, 143, 143, 0.524), rgba(162, 143, 143, 0.524)), url(../images/img-register.png);
-    }
-   
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        width: 704px;
-        display: flex;
-        background-image: url(../images/small-donuts.png), url(../images/small-cloud.png), url(../images/strawberry-donuts.png);
-        background-repeat: no-repeat;
-        background-position: 25px 170px, left, right;
-        position: relative;
-    }
-    @media screen and (min-width: $desctop) {
-        width: 1034px;
-        height: 246px;
-        display: flex;
-        background-image: url(../images/big-donuts.png), url(../images/big-cloud.png), url(../images/strawberry-donuts.png);
-        background-repeat: no-repeat;
-        background-position: 15px 97px, left, right;
-        position: relative;
-    }
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  @media screen and (max-width: $pre-tablet) {
+    background-image: linear-gradient(
+        rgba(162, 143, 143, 0.524),
+        rgba(162, 143, 143, 0.524)
+      ),
+      url(../images/img-register.png);
+  }
 
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    width: 704px;
+    display: flex;
+    background-image: url(../images/small-donuts.png),
+      url(../images/small-cloud.png), url(../images/strawberry-donuts.png);
+    background-repeat: no-repeat;
+    background-position: 25px 170px, left, right;
+    position: relative;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 1034px;
+    height: 246px;
+    display: flex;
+    background-image: url(../images/big-donuts.png),
+      url(../images/big-cloud.png), url(../images/strawberry-donuts.png);
+    background-repeat: no-repeat;
+    background-position: 15px 97px, left, right;
+    position: relative;
+  }
 }
 .date {
-    display: flex;
-    border-bottom: 1px solid var(--border-color-white);
-    justify-content: center;
-    margin-left: 8px;
-    margin-right: 8px;
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        max-width: 90px;
-        flex-shrink: 0;
-        border: none;
-        margin-left: 62px;
-        margin-right: 0px;
-        border-bottom: 0;
-       
-        &::after {
-                position: absolute;
-                width: 1px;
-                height: 154px;
-                color: rgba(0, 0, 0, 0.5);
-                content: " ";
-                border: 1px solid rgba(0, 0, 0, 0.5);
-                top: 60px;
-                left: 184px;
-            }
+  display: flex;
+  border-bottom: 1px solid var(--border-color-white);
+  justify-content: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    max-width: 90px;
+    flex-shrink: 0;
+    border: none;
+    margin-left: 62px;
+    margin-right: 0px;
+    border-bottom: 0;
+
+    &::after {
+      position: absolute;
+      width: 1px;
+      height: 154px;
+      color: rgba(0, 0, 0, 0.5);
+      content: ' ';
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      top: 60px;
+      left: 184px;
     }
-    @media screen and (min-width: $desctop) {
-        width: 127px;
-        border-bottom: 0; 
-        margin-left: 213px;
-        margin-top: auto;
-        margin-bottom: auto;
-        &::after {
-                position: absolute;
-                width: 1px;
-                height: 184px;
-                color: rgba(0, 0, 0, 0.5);
-                content: " ";
-                border: 1px solid rgba(0, 0, 0, 0.5);
-                top: 40px;
-                left: 368px;
-            }
+  }
+  @media screen and (min-width: $desctop) {
+    width: 127px;
+    border-bottom: 0;
+    margin-left: 213px;
+    margin-top: auto;
+    margin-bottom: auto;
+    &::after {
+      position: absolute;
+      width: 1px;
+      height: 184px;
+      color: rgba(0, 0, 0, 0.5);
+      content: ' ';
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      top: 40px;
+      left: 368px;
     }
+  }
 }
 .date__text {
-    color: #fff;
-    font-weight: 500;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    color: #000;
+    // position: relative;
     font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    line-height: 1.11;
+    text-align: right;
+    vertical-align: center;
     padding-right: 0px;
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        color: #000;
-        // position: relative;
-        font-size: 18px;
-        line-height: 1.11;
-        text-align: right;
-        vertical-align: center;
-        padding-right: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-top: 85px;
-       
-    }
-    @media screen and (min-width: $desctop) {
-        color: var(--main-color);
-        font-size: 20px;
-        line-height: 1.2;
-        align-items: right;
-        vertical-align: top;
-    }
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 85px;
+  }
+  @media screen and (min-width: $desctop) {
+    color: var(--main-color);
+    font-size: 20px;
+    line-height: 1.2;
+    align-items: right;
+    vertical-align: top;
+  }
 }
 // .vl {
 //     @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
@@ -138,120 +141,119 @@
 //         color: #000;
 //         content: " ";
 //     }
-    
+
 // }
 .registration__info {
-    margin-left: 8px;
-    margin-bottom: 24px;
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        margin-left: 56px;
-        margin-top: 40px;
-        margin-bottom: 0px;
-    }
-    @media screen and (min-width: $desctop) {
-        margin-top: 40px;
-        margin-bottom: 0px;
-        margin-left: 56px;
-    }
+  margin-left: 8px;
+  margin-bottom: 24px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    margin-left: 56px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 56px;
+  }
 }
 .registration__text {
-    color: #fff;
-    margin-bottom: 20px;
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        color: #000;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
-        text-align: left;
-        vertical-align: top;
-    }
-    @media screen and (min-width: $desctop) {
-        color: #000;
-        width: 252px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.25;
-        text-align: left;
-        vertical-align: top;
-        }
+  color: #fff;
+  margin-bottom: 20px;
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: left;
+    vertical-align: top;
+  }
+  @media screen and (min-width: $desctop) {
+    color: #000;
+    width: 252px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: left;
+    vertical-align: top;
+  }
 }
 
 .registration__input {
-    width: 264px;
-    display: block;
-    margin-bottom: 20px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--border-color-white);
-    background-color: transparent;
-    align-items: center;
+  width: 264px;
+  display: block;
+  margin-bottom: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--border-color-white);
+  background-color: transparent;
+  align-items: center;
+  color: #fff;
+
+  &::placeholder {
     color: #fff;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    width: 237px;
+    padding-left: 0px;
+    border-color: var(--border-color-black);
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+  @media screen and (min-width: $desctop) {
+    // padding-left: 24px;
+    width: 212px;
+    border-color: var(--border-color-black);
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 16px;
 
     &::placeholder {
-        color: #fff;
+      color: rgba(0, 0, 0, 0.5);
     }
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        width: 237px;
-        padding-left: 0px;
-        border-color: var(--border-color-black);
-        color: rgba(0, 0, 0, 0.5);
-        margin-bottom: 16px;
-        &::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-    }
-    @media screen and (min-width: $desctop) {
-        // padding-left: 24px;
-        width: 212px;
-        border-color: var(--border-color-black);
-        color: rgba(0, 0, 0, 0.5);
-        margin-bottom: 16px;
-        
-        &::placeholder {
-            color: rgba(0, 0, 0, 0.5);
-        }
-    }
+  }
 }
 .form {
-    margin-top: 24px;
-    @media screen and (min-width: $tablet) {
-        display: flex; 
-        margin-top: 0px;
-        height: 246px;
-    }
-    @media screen and (min-width: $desctop) {
-        margin-top: 0px;
-    }
+  margin-top: 24px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-top: 0px;
+    height: 246px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 0px;
+  }
 }
 .register {
-    padding-bottom: 32px;
-    
-    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
-        margin: 103px 40px 103px 74px;
-    }
-    @media screen and (min-width: $desctop) {
-        margin-top: 103px;
-        margin-right: 232px;
-        margin-bottom: 103px;
-    }
+  padding-bottom: 32px;
 
+  @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
+    margin: 103px 40px 103px 74px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-top: 103px;
+    margin-right: 232px;
+    margin-bottom: 103px;
+  }
 }
 .registration__button {
-    @extend .register-link;
-    display: block;
-    border: 0px solid;
-    // margin-bottom: 32px;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+  @extend .register-link;
+  display: block;
+  border: 0px solid;
+  // margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
-    &:hover,
-    &:focus {
-        background-color: #fff;
-        border: 1px solid var(--pink-color);
-        filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
-        color: rgba(243, 132, 140, 1);
-    }
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    border: 1px solid var(--pink-color);
+    filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+    color: rgba(243, 132, 140, 1);
+  }
 }
